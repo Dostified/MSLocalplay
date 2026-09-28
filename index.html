@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Local Play - High-Speed Media Player & DLNA Casting</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --card-border: #30363d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-purple: #bc8cff;
+            --accent-orange: #f0883e;
+            --gradient-primary: linear-gradient(135deg, #1f6feb, #8957e5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 16px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1.1rem;
+            padding: 14px 36px;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(31, 111, 235, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(31, 111, 235, 0.6);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 28px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--card-border);
+            margin-top: 60px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            📱 MS Local Play
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://play.google.com/store/apps/details?id=com.mukeshsaw.mslocalplay" class="download-btn" style="padding: 8px 18px; font-size: 0.9rem;">Download</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>High-Speed Local Media Player & DLNA Casting</h1>
+        <p>Experience seamless video, music, and photo playback alongside powerful DLNA casting for Jio STB, Smart TVs, Chromecast, and web browsers.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.mukeshsaw.mslocalplay" class="download-btn">📥 Download MS Local Play</a>
+    </section>
+
+    <div class="container" id="features">
+        <h2 class="section-title">✨ Powerful Features</h2>
+
+        <div class="grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎬</div>
+                <h3>Edge-to-Edge Video Player</h3>
+                <p>Hardware-accelerated fullscreen landscape video playback with FIT, STRETCH (100% physical screen glass filling), and CROP aspect ratio modes.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📺</div>
+                <h3>Smart TV & Jio STB Casting</h3>
+                <p>One-tap local Wi-Fi casting to Jio STB, Smart TVs, Fire TV, Chromecast, AirPlay, and web browsers with instant QR code connection.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📡</div>
+                <h3>Built-In DLNA MediaServer (DMS)</h3>
+                <p>Turn your phone into a discoverable DLNA Media Server. Browse and stream your local files directly on VLC, Nova Player, Kodi, and Smart TVs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎵</div>
+                <h3>Advanced Local Music Player</h3>
+                <p>ID3 album cover art extraction, slideable playlist queue, centered playback controls, and horizontal swipe gestures on cover art to switch tracks.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📂</div>
+                <h3>Storage & OTG File Explorer</h3>
+                <p>Fast exploration of Internal Storage, SD Cards, and USB OTG drives with real media thumbnail previews and deep folder navigation.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>100% Private & Local</h3>
+                <p>All media indexing runs on-device. Zero external server data collection or tracking. Fully compliant with Google Play Store policies.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed with ❤️ by Mukesh Saw (Dostified)</p>
+        <p style="margin-top: 10px;">
+            <a href="#features">Features</a> •
+            <a href="privacy.html">Privacy Policy</a> •
+            <a href="https://play.google.com/store/apps/dev?id=6576592706788716278" target="_blank">Developer Page</a>
+        </p>
+    </footer>
+
+</body>
+</html>

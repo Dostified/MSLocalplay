@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MS Local Play</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-purple: #bc8cff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .nav-back {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .nav-back:hover {
+            color: var(--accent-blue);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .app-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            margin-bottom: 6px;
+        }
+
+        .developer-name {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(63, 185, 80, 0.15);
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            color: var(--text-primary);
+            margin-bottom: 14px;
+            font-size: 0.98rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 14px;
+            color: var(--text-primary);
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        strong {
+            color: var(--accent-purple);
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">📱 MS Local Play</a>
+            <a href="index.html" class="nav-back">← Back to Home Page</a>
+        </nav>
+
+        <header>
+            <div class="app-title">Privacy Policy</div>
+            <div class="developer-name">MS Local Play • Developed by Mukesh Saw (Dostified)</div>
+            <span class="badge">100% Private • On-Device Storage • Zero Tracking</span>
+        </header>
+
+        <div class="card">
+            <h2>🛡️ Overview & Privacy Commitment</h2>
+            <p>Welcome to <strong>MS Local Play</strong>. We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how our Android application handles information when you use our local media player and streaming features.</p>
+            <p><strong>Core Guarantee:</strong> MS Local Play is designed as a local-first application. All media indexing, video playback, photo browsing, and music playback operations run 100% on your device. We do not collect, store, transmit, or monetize any of your personal files or user data.</p>
+        </div>
+
+        <div class="card">
+            <h2>🔑 Permissions & Their Exact Usage</h2>
+            <p>To provide local playback and local Wi-Fi casting capabilities, MS Local Play requests the following permissions on your device:</p>
+            <ul>
+                <li><strong>Media & Storage Access (READ_MEDIA_VIDEO, READ_MEDIA_IMAGES, READ_MEDIA_AUDIO, READ_MEDIA_VISUAL_USER_SELECTED, READ_EXTERNAL_STORAGE):</strong> Used exclusively to discover and display your local videos, photos, and music files within the app. Your files are never uploaded to any remote server.</li>
+                <li><strong>Local Network & Wi-Fi Access (INTERNET, ACCESS_WIFI_STATE, CHANGE_WIFI_MULTICAST_STATE, NEARBY_WIFI_DEVICES):</strong> Used strictly to enable local HTTP and DLNA streaming (`http://192.168.x.x:8080`) over your home Wi-Fi network to your own Jio STB, Smart TV, or web browser.</li>
+                <li><strong>Foreground Service & Notifications (FOREGROUND_SERVICE, POST_NOTIFICATIONS):</strong> Used to keep the local media server active in the background and display system media player controls (Play, Pause, Next, Previous) in your Notification Center.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🚫 Data Collection & Third-Party Sharing</h2>
+            <ul>
+                <li><strong>No Advertising SDKs:</strong> MS Local Play contains no third-party ad networks or tracking libraries.</li>
+                <li><strong>No Analytics Tracking:</strong> We do not track your usage habits, device identifiers, or playback history.</li>
+                <li><strong>No Data Sales:</strong> Your data is never sold, shared, or transferred to third parties.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>👶 Children's Privacy</h2>
+            <p>MS Local Play is a general audience local media player. The app does not collect personal information from any user, including children under the age of 13.</p>
+        </div>
+
+        <div class="card">
+            <h2>✉️ Contact Us</h2>
+            <p>If you have any questions or feedback regarding this Privacy Policy, please feel free to reach out:</p>
+            <ul>
+                <li><strong>Developer:</strong> Mukesh Saw</li>
+                <li><strong>Email Contact:</strong> contact.dostified@gmail.com</li>
+                <li><strong>Google Play Developer Page:</strong> <a href="https://play.google.com/store/apps/dev?id=6576592706788716278" target="_blank">View Developer Apps</a></li>
+            </ul>
+        </div>
+
+        <div class="last-updated">
+            Effective Date: September 29, 2026 • MS Local Play Version 1.2
+        </div>
+    </div>
+
+</body>
+</html>
